@@ -1,0 +1,16 @@
+function setup() {
+  createCanvas(600, 400);
+  background(0);
+  strokeWeight(80);
+  frameRate(18);
+}
+
+function draw() {
+  for (let i = 0; i < width; i++) {
+    let r = random(255);
+    stroke(r);
+    line(i, 35, i, height);
+  }
+}
+
+//The source code used for this was the Random example posted by p5.js. https://p5js.org/examples/math-random.html
